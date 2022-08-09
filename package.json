@@ -1,0 +1,49 @@
+{
+  "name": "entry-organizer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@contentstack/management": "^1.2.4",
+    "@contentstack/ui-extensions-sdk": "^2.2.1",
+    "@contentstack/venus-components": "^1.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "contentstack": "^3.15.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^1.1.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build > build.log",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cs:upload": "react-scripts build > build.log && cd ../uploader && node upload.js run -i example.dashboard.input.json",
+    "cs:reupload": "cd ../uploader && node upload.js run -i example.dashboard.input.json"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.0.0"
+  }
+}
